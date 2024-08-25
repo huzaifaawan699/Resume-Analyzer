@@ -1,0 +1,18 @@
+{
+  "name": "ai-resume-analyzer-backend",
+  "version": "1.0.0",
+  "description": "Backend server for the AI Resume Analyzer application.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.17.3",
+    "ibm-cloud-sdk-core": "^5.0.1",
+    "ibm-watson": "^8.0.0",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7"
+  }
+}

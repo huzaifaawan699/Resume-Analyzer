@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}
+.resume-preview {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.resume-preview:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.analysis-results {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.analysis-results:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Custom styles */
+.feedback-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feedback-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.job-match-item {
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.job-match-item:hover {
+  background-color: #d1fae5; /* Light green for hover effect */
+  transform: scale(1.02);
+}
+
+/* UploadResume.css */
+
+.upload-resume-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-resume-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.file-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.upload-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+}
+
+.response-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f9f9f9;
+}
+
+.response-header {
+  margin: 0;
+  color: #333;
+}
+
+.response-data {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
